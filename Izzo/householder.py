@@ -1,10 +1,11 @@
-
+# Householder Algorithm is a root finding algorithm based on 3 derivative functions.
+# The derivative functions f1,f2,f3 are given by functions special for the lambert problem.
 def lamb_house(func, x0, e):
     x = []
     x[0] = x0
     n = 0
     x[1] = x[0] + d
-    f1 = (3*T*x-2+2*l**3*x/y)/(1-x**2)
+    f1 = (3*T*x-2+2*l**3*x/y)/(1-x**2) 
     f2 = (3*T - 5*x*f1 + 2*(1-l**2*x**3/y**3))/(1-x**2)
     f3 = (7*x+5*x*f2+8*f1-6*(1-l**2)*l**5 *x /y**5)/(1-x**2)
 
@@ -14,4 +15,3 @@ def lamb_house(func, x0, e):
 
 
 lamb_house(x, x, y)
-# Test für git

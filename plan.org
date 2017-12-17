@@ -1,3 +1,4 @@
+#+STARTUP: indent
 * C3 Energy Level Calculation for Orbit-Optimization
 
 ** Revisiting Lambert's problem [Dario Izzo]
@@ -8,7 +9,7 @@
     [[file:lambert.py][Lambert Algorithm]]
 
 **** TODO Householder Algorithmus implementieren
-      [[file:householder.py][Householder Algorithm]]
+     [[file:householder.py][Householder Algorithm]]
 
 ***** DONE Derivative function implementieren
       CLOSED: [2017-11-19 Sun 22:07]
@@ -26,7 +27,14 @@
       [[file:halley.py][Halley Algorithmus]]
 
 
-*** TODO PyGMO verstehen
+
+** Handout
+[[file:./Handout/lambert.py][Handout easy lambert]]
+INPUT :
+r0, rf, t0, DM (+1 or -1)
+1. Delta nu
+** Porkchop Plot
+*** TODO PyGMO 
     Link zur Dokumentation:
     [[http://esa.github.io/pygmo/quickstart.html][PyGMO]]
 
