@@ -1,0 +1,32 @@
+* C3 Energy Level Calculation for Orbit-Optimization
+
+** Revisiting Lambert's problem [Dario Izzo]
+  Link zum Paper
+  [[docview:https:/arxiv.org/pdf/1403.2705.pdf::1][https://arxiv.org/pdf/1403.2705.pdf]]
+
+*** TODO Lambert Algorithm implementieren 
+    [[file:lambert.py][Lambert Algorithm]]
+
+**** TODO Householder Algorithmus implementieren
+      [[file:householder.py][Householder Algorithm]]
+
+***** DONE Derivative function implementieren
+      CLOSED: [2017-11-19 Sun 22:07]
+      :LOGBOOK:
+      CLOCK: [2017-11-19 Sun 21:59]--[2017-11-19 Sun 22:07] =>  0:08
+      :END:
+    $(1-x^2) \frac{dT}{dx} = 3 T x - 2 +2 \lambda^3\frac{x}{y}$
+    $(1-x^2) \frac{d^2T}{d^2x} = 3 T  + 5x \frac{dT}{dx}+2(1-\lambda^2)\frac{\lambda ^3}{y^3}$
+    $(1-x^2) \frac{d^3T}{d^3x} = 7x  + 5x\frac{d^2T}{d^2x}+ 8 \frac{dT}{dx}-6(1-\lambda^2)\lambda^5\frac{x}{y^5}$
+
+      #+BEGIN_SRC python
+      def 
+      #+END_SRC
+**** TODO Halley Algorithmus implementieren 
+      [[file:halley.py][Halley Algorithmus]]
+
+
+*** TODO PyGMO verstehen
+    Link zur Dokumentation:
+    [[http://esa.github.io/pygmo/quickstart.html][PyGMO]]
+
